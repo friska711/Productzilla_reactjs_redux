@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { setFormData } from '../../store/formSlice';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Step1 = () => {
   const [name, setName] = useState('');
@@ -87,8 +87,6 @@ const Step1 = () => {
         </div>
         <button type="submit">Next</button>
       </form>
-      <Link to="/welcome" className="link-button">
-      </Link>
     </div>
   );
 };
